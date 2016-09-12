@@ -19,5 +19,5 @@ usermod -u $UID syncthing
 #chmod -R 770 /srv/config /srv/data
 chown -R syncthing:users /srv/syncthing
 
-gosu syncthing /srv/syncthing/syncthing -home=/srv/config
+exec gosu syncthing /srv/syncthing/syncthing -home=/srv/config
 
